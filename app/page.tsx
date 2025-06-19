@@ -34,8 +34,8 @@ import CosmicBackground from "@/components/cosmic-background";
 import EnhancedCosmicAura from "@/components/enhanced-cosmic-aura";
 import EnhancedCursor from "@/components/enhanced-cursor";
 import ScrollIndicator from "@/components/scroll-indicator";
-import Image from 'next/image';
-import profileImage from '../public/stuti-profile.jpg';
+import Image from "next/image";
+import profileImage from "../public/stuti-profile.jpg";
 
 export default function Home() {
   return (
@@ -597,39 +597,42 @@ export default function Home() {
             <div className="inline-block">
               <h2 className="text-4xl md:text-5xl font-bold tracking-tight relative">
                 <span className="bg-gradient-to-r from-foreground via-primary to-purple-500 bg-clip-text text-transparent">
-                  Latest Articles
+                  Lines of Code, Stories of Growth :
                 </span>
                 <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-1/3 h-1 bg-gradient-to-r from-primary to-purple-500 rounded-full"></div>
               </h2>
             </div>
             <p className="text-muted-foreground text-xl max-w-3xl mx-auto leading-relaxed">
-              Thoughts, insights, and tutorials on web development and
-              technology
+              A digital diary of logic, learning, and late-night 'aha!' moments.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "Building Accessible Web Applications",
+                title: "LeetCode: Two Sum - HashMap Mastery",
                 excerpt:
-                  "Learn how to make your web applications accessible to all users, including those with disabilities.",
-                date: "June 15, 2023",
-                category: "Accessibility",
+                  "Cracked the classic Two Sum problem using HashMap in O(n) time. A must-know for any dev prepping for interviews!",
+                date: "May 12, 2024",
+                category: "DSA Practice",
+                link: "https://www.linkedin.com/posts/stuticoder1_twosumproblemleetcode-activity-7270743282253451265-6JF1",
               },
               {
-                title: "The Future of React: What's Coming in React 19",
+                title: "LeetCode: Palindrome Number - Logic Over Strings",
                 excerpt:
-                  "Explore the upcoming features and improvements in React 19 and how they will change the way we build applications.",
-                date: "May 28, 2023",
-                category: "React",
+                  "Solved without converting to strings — reversed half the number using pure math logic. Efficient and elegant!",
+                date: "May 19, 2024",
+                category: "DSA Practice",
+                link: "https://www.linkedin.com/posts/stuticoder1_palindrome-number-activity-7281022717858893824-i_66",
               },
               {
-                title: "Optimizing Performance in Next.js Applications",
+                title:
+                  "LeetCode: Maximum Candies to K Kids - Binary Search Brilliance",
                 excerpt:
-                  "Practical tips and techniques for improving the performance of your Next.js applications.",
-                date: "April 10, 2023",
-                category: "Performance",
+                  "Learned the Binary Search on Answer technique through this allocation problem. Leetcode Hard? More like Leetcode Smart!",
+                date: "June 6, 2024",
+                category: "DSA Practice",
+                link: "https://www.linkedin.com/posts/stuticoder1_day6-coding-problemsolving-activity-7306215870823829506-ypJF",
               },
             ].map((article, index) => (
               <BlogCard
@@ -639,7 +642,7 @@ export default function Home() {
                 date={article.date}
                 category={article.category}
                 image="/placeholder.svg?height=300&width=500"
-                url="#"
+                url={article.link || "#"}
                 index={index}
               />
             ))}
@@ -668,13 +671,13 @@ export default function Home() {
             <div className="inline-block">
               <h2 className="text-4xl md:text-5xl font-bold tracking-tight relative">
                 <span className="bg-gradient-to-r from-foreground via-primary to-purple-500 bg-clip-text text-transparent">
-                  Client Testimonials
+                  Voices that vouch for me
                 </span>
                 <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-1/3 h-1 bg-gradient-to-r from-primary to-purple-500 rounded-full"></div>
               </h2>
             </div>
             <p className="text-muted-foreground text-xl max-w-3xl mx-auto leading-relaxed">
-              What clients and colleagues say about working with me
+              The impact I left behind
             </p>
           </div>
 
@@ -682,29 +685,29 @@ export default function Home() {
             {[
               {
                 quote:
-                  "Working with this developer was an absolute pleasure. They delivered our project on time and exceeded our expectations with their attention to detail and creative solutions.",
-                author: "Sarah Johnson",
-                position: "CEO, TechStart",
-                rating: 5,
-              },
-              {
-                quote:
-                  "An exceptional developer who truly understands both the technical and business aspects of a project. Their work has significantly improved our user engagement and conversion rates.",
-                author: "Michael Chen",
+                  "Hey Stuti, it was truly great connecting with you! Your posts are incredibly helpful — I’ve learned so much from them. Also, your WhatsApp channel is a gem for the valuable resources you share. God bless you and keep inspiring!",
+                author: "Abhishek",
                 position: "Marketing Director, GrowthLabs",
                 rating: 5,
               },
               {
                 quote:
-                  "I was impressed by their ability to translate our complex requirements into a user-friendly interface. Their technical expertise and communication skills made the project run smoothly.",
-                author: "Emily Rodriguez",
+                  "Stuti ji, your journey is truly inspiring! ✨ Your passion, authenticity, and commitment to meaningful connections have built a thriving community. It’s amazing to see the impact you’re making, and I’m excited for all that you’ll achieve in this new chapter. Keep shining and sharing your light!🌟",
+                author: "Piyush Soni",
+                position: "CEO, TechStart",
+                rating: 5,
+              },
+              {
+                quote:
+                  "I just wanted to let you know that the PRs you made today really helped me learn a lot about open source. I wasn’t very familiar with it before, but your contribution sparked my curiosity to explore it further. I found it genuinely exciting — and I’m looking forward to learning more! Thanks for helping me discover something new today.",
+                author: "Prem Siddhartha",
                 position: "Product Manager, InnovateCorp",
                 rating: 5,
               },
               {
                 quote:
-                  "Not only did they deliver a beautiful website, but they also provided valuable insights that helped us improve our overall digital strategy. Highly recommended!",
-                author: "David Thompson",
+                  "I noticed your impressive work in digital outreach and truly appreciate the impact you're making. That’s why I’d love to stay connected — so I can learn more from your journey and experiences",
+                author: "Avinash Pandey",
                 position: "Founder, CreativeDesign",
                 rating: 5,
               },
@@ -747,8 +750,8 @@ export default function Home() {
               {[
                 {
                   icon: Mail,
-                  text: "stutigupta@example.com",
-                  href: "mailto:stutigupta@example.com",
+                  text: "stuticoder123@gmail.com",
+                  href: "mailto:stuticoder123@gmail.com",
                 },
                 {
                   icon: Linkedin,
@@ -757,8 +760,8 @@ export default function Home() {
                 },
                 {
                   icon: Github,
-                  text: "github.com/username",
-                  href: "https://github.com",
+                  text: "github.com/stuticoder123",
+                  href: "https://github.com/stuticoder123",
                 },
               ].map(({ icon: Icon, text, href }) => (
                 <MagneticButton key={text}>
@@ -816,8 +819,8 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12">
             <p className="text-muted-foreground">
               © {new Date().getFullYear()} All rights reserved. Made with{" "}
-              <Heart className="inline h-4 w-4 text-red-500" /> and lots of
-              coffee.
+              <Heart className="inline h-4 w-4 text-red-500" /> and a blend of
+              dedication.
             </p>
             <div className="flex items-center gap-4">
               {[

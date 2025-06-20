@@ -685,16 +685,16 @@ export default function Home() {
             {[
               {
                 quote:
-                  "Hey Stuti, it was truly great connecting with you! Your posts are incredibly helpful — I’ve learned so much from them. Also, your WhatsApp channel is a gem for the valuable resources you share. God bless you and keep inspiring!",
-                author: "Abhishek",
-                position: "Marketing Director, GrowthLabs",
+                  "Stuti ji, your journey is truly inspiring! ✨ Your passion, authenticity, and commitment to meaningful connections have built a thriving community. It’s amazing to see the impact you’re making, and I’m excited for all that you’ll achieve in this new chapter. Keep shining and sharing your light!🌟",
+                author: "Piyush Soni",
+                position: "CEO, TechStart",
                 rating: 5,
               },
               {
                 quote:
-                  "Stuti ji, your journey is truly inspiring! ✨ Your passion, authenticity, and commitment to meaningful connections have built a thriving community. It’s amazing to see the impact you’re making, and I’m excited for all that you’ll achieve in this new chapter. Keep shining and sharing your light!🌟",
-                author: "Piyush Soni",
-                position: "CEO, TechStart",
+                  "Hey Stuti, it was truly great connecting with you! Your posts are incredibly helpful — I’ve learned so much from them. Also, your WhatsApp channel is a gem for the valuable resources you share. God bless you and keep inspiring!",
+                author: "MS Abhishek",
+                position: "Marketing Director, GrowthLabs",
                 rating: 5,
               },
               {

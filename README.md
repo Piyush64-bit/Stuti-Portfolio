@@ -1,58 +1,128 @@
-# 💻 Stuti Gupta's Portfolio Website - 2
-Welcome to my personal portfolio website — a space where I showcase my skills, projects, and passion for crafting digital experiences that inspire and engage.
-🌐 **Live Site** : [You can check it here](https://v0-portfolio-website-makeover-seven.vercel.app/)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+# 💻 Stuti Gupta's Portfolio Website – v2
+
+Welcome to the **revamped portfolio** of [Stuti Gupta](https://github.com/stuticoder123) — a modern, elegant web space designed to showcase her skills, projects, and passion for crafting digital experiences that inspire and engage. This site is a testament to clean design, robust engineering, and a love for building delightful user interfaces.
+
+🌐 **Live Site** → [Check it out here](https://stuticoder123.netlify.app/)
 
 ---
 
 ## ✨ Features
 
-- **Hero Section with Impactful Tagline**  
-  Eye-catching headline: *“Crafting Digital experiences that inspire and engage”* to create a strong first impression.
+- 🎯 **Hero Section with Impactful Tagline**  
+  “*Crafting Digital experiences that inspire and engage*” — designed to grab attention from the very first glance.
 
-- **Clean, Modern UI**  
-  Minimalistic layout with a strong visual hierarchy, responsive across all devices.
+- 🎨 **Clean, Modern UI**  
+  Minimalist design with a bold visual hierarchy, ensuring content stands out and navigation feels effortless.
 
-- **Responsive Design**  
-  Optimized for all screen sizes — mobile, tablet, and desktop.
+- 📱 **Fully Responsive Design**  
+  Seamlessly adapts to all devices — from mobile phones to large desktops — for a consistent experience everywhere.
 
-- **Modular Component Structure**  
-  Reusable UI elements like header, hero section, content blocks, and footer for easy customization.
+- ♻️ **Modular Component Structure**  
+  Built with reusable, scalable components for easy expansion and maintenance.
 
-- **Optimized Typography & Spacing**  
-  Carefully chosen fonts and spacing for better readability and aesthetic balance.
+- ✍️ **Optimized Typography & Spacing**  
+  Carefully selected fonts and layouts for an aesthetic, readable interface.
 
-- **Smooth Navigation**  
-  Clear and smooth scrolling navigation with a professional layout.
+- 🔗 **Smooth Navigation**  
+  Frictionless page transitions and scroll-based interactions for a delightful browsing experience.
 
-- **Ready for Customization**  
-  Sections like About, Work, Projects, and Contact can be easily extended or modified as needed.
+- 🧩 **Easy to Customize**  
+  Sections like About, Projects, and Contact are modular — extend, replace, or personalize them as you wish.
+
+- ⚡ **Performance Optimized**  
+  Fast load times and best practices for web performance.
+
+- 🌙 **Dark Mode Ready**  
+  Enjoy a beautiful interface, day or night.
 
 ---
 
-## 🛠 Tech Stack Used
+## 🛠 Tech Stack
 
-| Category        | Technology              |
-|----------------|--------------------------|
-| **Frontend**    | [React.js](https://reactjs.org/) (via Next.js) |
-| **Styling**     | [Tailwind CSS](https://tailwindcss.com/) |
-| **Deployment**  | [Vercel](https://vercel.com/) |
-| **Component Design** | [Vercel v0](https://v0.dev/) AI UI Builder |
-| **Icons** (optional) | Heroicons / Lucide |
+| Category              | Technology                                |
+|-----------------------|--------------------------------------------|
+| **Framework**         | [Next.js](https://nextjs.org/)            |
+| **Styling**           | [Tailwind CSS](https://tailwindcss.com/)  |
+| **Deployment**        | [Netlify](https://www.netlify.com/), [Vercel](https://vercel.com/) |
+| **UI Builder**        | [Vercel v0](https://v0.dev/)              |
+| **Icons** *(optional)*| [Heroicons](https://heroicons.com/) / [Lucide](https://lucide.dev/) |
 
 ---
 
 ## 📁 Project Structure
 
-- `pages/` – All route pages (Home, About, Contact, etc.)
-- `components/` – Reusable UI components like Navbar, Hero Section, Footer
-- `public/` – Images and static assets
+```
+📦 root/
+├── pages/         # Route-based pages (Home, About, etc.)
+├── components/    # Reusable UI components (Navbar, Hero, Footer)
+├── public/        # Static assets (images, icons)
+└── styles/        # Tailwind and global styles (if any)
+```
+
+---
+
+## 📸 Screenshots
+
+Here are some screenshots of the Portfolio:
+
+<div align="center" style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+  <img src="screenshot/ss1.png" alt="Homepage" width="25%" />
+  <img src="screenshot/ss2.png" alt="Gallery" width="25%" />
+</div>
+
+<br/>
+
+<div align="center" style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+  <img src="screenshot/ss3.png" alt="Product Details" width="25%" />
+  <img src="screenshot/ss4.png" alt="Cart Page" width="25%" />
+</div>
 
 ---
 
 ## 🚀 Getting Started
 
+Clone the repository and run locally:
+
 ```bash
-git clone https://github.com/your-username/portfolio-website.git
-cd portfolio-website
+git clone https://github.com/Piyush64-bit/Stuti-Portfolio.git
+cd Stuti-Portfolio
 npm install
 npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the magic ✨
+
+---
+
+## 🌍 Deploying to Netlify
+
+Want to deploy your own version? It's easy with Netlify!
+
+1. **Fork or clone** this repository.
+2. Push your code to GitHub (or your preferred Git provider).
+3. Go to [Netlify](https://www.netlify.com/) and click **"New site from Git"**.
+4. Connect your repository and follow the prompts.
+5. Set the build command to `npm run build` and the publish directory to `.next`.
+6. Click **Deploy** — your portfolio will be live in minutes!
+
+*You can also deploy to [Vercel](https://vercel.com/) with similar steps.*
+
+---
+
+## 🙌 Credits
+
+This portfolio was created by [**Stuti Gupta**](https://github.com/stuticoder123),  
+with development support, design guidance, and responsive tweaks by [**Piyush**](https://github.com/Piyush64-bit) (me 😎).
+
+---
+
+## 📄 License
+
+This project is open-sourced under the MIT License. Feel free to fork, star, and build on it!
+
+---
+
+## 🧠 Want Help Creating Your Portfolio?
+
+If you're looking for help creating your own portfolio like this — shoot me a message. Let's build something amazing! 💬

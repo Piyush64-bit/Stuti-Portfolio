@@ -1,6 +1,47 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-# 💻 Stuti Gupta's Portfolio Website – v2
+
+<h1 align="center">💫 Stuti Gupta's Portfolio Website – v2</h1>
+
+<p align="center">
+  🚀 A sleek, modern portfolio site built with <strong>React</strong> + <strong>Tailwind CSS</strong><br/>
+  ✨ Crafted by <a href="https://github.com/stuticoder123">Stuti Gupta</a> with tech support from <a href="https://github.com/Piyush64-bit">Piyush</a> 💻
+</p>
+
+<br/>
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" style="vertical-align: middle;">
+        <img src="https://raw.githubusercontent.com/Piyush64-bit/Stuti-Portfolio/main/public/screenreacording.gif" 
+             alt="Portfolio Preview" 
+             width="150" 
+             style="border-radius: 12px;" />
+        <br/>
+        <sub>🎥 Preview of the live site</sub>
+      </td>
+    </tr>
+  </table>
+</div>
+
+---
+
+## 🔥 Highlights
+
+- 🎯 **Impactful Hero Section** – Clean & bold intro that sets the tone
+- 🎨 **Stylish, Minimal UI** – Pixel-perfect layout with good spacing
+- 📱 **Mobile-first & Fully Responsive**
+- 🛠 **Built with Next.js + Tailwind CSS**
+- ✨ **Designed by Stuti, Supported by Piyush**
+
+---
+
+## 🌐 Live Demo  
+🔗 [Check it out here](https://v0-portfolio-website-makeover-seven.vercel.app/)
+
+
+
 
 Welcome to the **revamped portfolio** of [Stuti Gupta](https://github.com/stuticoder123) — a modern, elegant web space designed to showcase her skills, projects, and passion for crafting digital experiences that inspire and engage. This site is a testament to clean design, robust engineering, and a love for building delightful user interfaces.
 

@@ -36,6 +36,9 @@ import EnhancedCursor from "@/components/enhanced-cursor";
 import ScrollIndicator from "@/components/scroll-indicator";
 import Image from "next/image";
 import profileImage from "../public/stuti-profile.jpg";
+import vizifyimg from "../public/vizify.png";
+import alumconnectimg from "../public/alumconnect.png";
+import portfolioimg from "../public/portfolio.png";
 
 export default function Home() {
   return (
@@ -385,36 +388,53 @@ export default function Home() {
                   "Your AI-powered academic companion that turns dense research papers into stunning presentations, immersive podcasts, eye-catching visual content, and crisp summaries — effortlessly.",
                 tags: ["Next.js", "React", "Tailwind CSS", "API"],
                 featured: true,
+                image: vizifyimg,
+                codeUrl: "https://github.com/stuticoder123/Vizify",
+                demoUrl: "https://v0-vizify-zeta-jade.vercel.app",
               },
               {
                 title: "Alum Connect",
                 description:
                   "It is a dynamic web platform designed to bridge the gap between alumni and students of educational institutions. It fosters a verified, secure, and engaging ecosystem where users can connect, mentor, collaborate, and explore opportunities.",
                 tags: ["MERN Stack", "Firebase", "Tailwind CSS", "JWT"],
+                image: alumconnectimg,
+                featured: true,
+                codeUrl: "https://github.com/Piyush64-bit/Alum-Connect",
+                demoUrl: "https://alum-connect.netlify.app",
               },
               {
                 title: "Portfolio Website",
                 description:
                   "A responsive portfolio website showcasing projects and skills with a modern design.",
                 tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
+                image: portfolioimg,
+                featured: true,
+                codeUrl: "https://github.com/Piyush64-bit/Stuti-Portfolio",
+                demoUrl: "https://stuticoder123.netlify.app",
               },
               {
                 title: "AI Content Generator",
                 description:
                   "An AI-powered application that generates high-quality content for blogs and social media.",
                 tags: ["Python", "OpenAI", "React", "FastAPI"],
+                codeUrl: "#",
+                demoUrl: "#",
               },
               {
                 title: "Real-time Chat Application",
                 description:
                   "A real-time messaging platform with features like typing indicators, read receipts, and file sharing.",
                 tags: ["Socket.io", "Node.js", "Express", "MongoDB"],
+                codeUrl: "#",
+                demoUrl: "#",
               },
               {
                 title: "Fitness Tracking Dashboard",
                 description:
                   "A comprehensive dashboard for tracking workouts, nutrition, and progress with data visualization.",
                 tags: ["React", "D3.js", "Node.js", "PostgreSQL"],
+                codeUrl: "#",
+                demoUrl: "#",
               },
             ].map((project, index) => (
               <ProjectCard
@@ -422,9 +442,13 @@ export default function Home() {
                 title={project.title}
                 description={project.description}
                 tags={project.tags}
-                image="/placeholder.svg?height=400&width=600"
-                demoUrl="#"
-                codeUrl="#"
+                image={
+                  typeof project.image === "string"
+                    ? project.image
+                    : project.image?.src ?? "/placeholder.svg"
+                }
+                demoUrl={project.demoUrl}
+                codeUrl={project.codeUrl}
                 featured={project.featured}
                 index={index}
               />

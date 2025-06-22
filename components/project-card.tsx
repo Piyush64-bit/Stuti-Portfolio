@@ -1,21 +1,21 @@
-"use client"
+"use client";
 
-import { ArrowUpRight, Github, Star, Sparkles } from "lucide-react"
-import { Card, CardContent, CardFooter } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import { motion } from "framer-motion"
-import Link from "next/link"
+import { ArrowUpRight, Github, Star, Sparkles } from "lucide-react";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 interface ProjectCardProps {
-  title: string
-  description: string
-  tags: string[]
-  image: string
-  demoUrl: string
-  codeUrl: string
-  featured?: boolean
-  index?: number
+  title: string;
+  description: string;
+  tags: string[];
+  image: string;
+  demoUrl: string;
+  codeUrl: string;
+  featured?: boolean;
+  index?: number;
 }
 
 export default function ProjectCard({
@@ -49,7 +49,11 @@ export default function ProjectCard({
             <div className="space-y-2">
               <h3 className="font-bold text-xl text-white">{title}</h3>
               <div className="flex gap-2">
-                <Button size="sm" variant="secondary" className="bg-white/20 backdrop-blur-sm">
+                <Button
+                  size="sm"
+                  variant="secondary"
+                  className="bg-white/20 backdrop-blur-sm"
+                >
                   <Sparkles className="h-3 w-3 mr-1" />
                   Preview
                 </Button>
@@ -59,13 +63,26 @@ export default function ProjectCard({
           {featured && (
             <motion.div
               className="absolute top-4 right-4"
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ delay: 0.5 }}
+              initial={{ scale: 0, rotate: -30, opacity: 0 }}
+              animate={{ scale: 1, rotate: 0, opacity: 1 }}
+              transition={{
+                type: "spring",
+                stiffness: 300,
+                damping: 22,
+                delay: 0.3,
+              }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
-              <Badge className="bg-gradient-to-r from-primary to-purple-500 text-white shadow-lg">
-                <Star className="h-3 w-3 mr-1" /> Featured
-              </Badge>
+              <motion.div
+                animate={{ scale: [1, 1.04, 1] }}
+                transition={{ repeat: Infinity, duration: 1.8 }}
+              >
+                <Badge className="bg-green-500 text-white shadow-md shadow-green-400/40 px-2.5 py-0.5 text-xs rounded-full flex items-center">
+                  <Star className="h-2.5 w-2.5 mr-1 animate-ping-fast text-white" />
+                  Live
+                </Badge>
+              </motion.div>
             </motion.div>
           )}
         </div>
@@ -77,7 +94,9 @@ export default function ProjectCard({
                 {title}
               </span>
             </h3>
-            <p className="text-muted-foreground leading-relaxed">{description}</p>
+            <p className="text-muted-foreground leading-relaxed">
+              {description}
+            </p>
           </div>
 
           <div className="flex flex-wrap gap-2">
@@ -127,5 +146,5 @@ export default function ProjectCard({
         </CardFooter>
       </Card>
     </motion.div>
-  )
+  );
 }

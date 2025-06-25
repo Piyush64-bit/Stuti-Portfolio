@@ -96,10 +96,17 @@ Welcome to the **revamped portfolio** of [Stuti Gupta](https://github.com/stutic
 
 ```
 📦 root/
-├── pages/         # Route-based pages (Home, About, etc.)
-├── components/    # Reusable UI components (Navbar, Hero, Footer)
-├── public/        # Static assets (images, icons)
-└── styles/        # Tailwind and global styles (if any)
+├── components/        # Reusable UI components (Navbar, Hero, Footer, etc.)
+├── pages/             # Route-based pages (index.js, about.js, projects.js, etc.)
+├── public/            # Static assets (images, icons, favicon, etc.)
+├── screenshot/        # Screenshots for documentation/README
+├── styles/            # Tailwind and global CSS files
+├── .gitignore         # Git ignore rules
+├── next.config.js     # Next.js configuration
+├── package.json       # Project metadata and dependencies
+├── postcss.config.js  # PostCSS configuration (for Tailwind)
+├── tailwind.config.js # Tailwind CSS configuration
+└── README.md          # Project documentation
 ```
 
 ---

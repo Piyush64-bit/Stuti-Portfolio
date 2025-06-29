@@ -2,7 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card"
 import { motion } from "framer-motion"
-import { Star, Quote } from "lucide-react"
+import { Star, Quote, ExternalLink } from "lucide-react"
 
 interface TestimonialCardProps {
   quote: string
@@ -10,10 +10,19 @@ interface TestimonialCardProps {
   position: string
   image: string
   rating: number
+  link?: string
   index?: number
 }
 
-export default function TestimonialCard({ quote, author, position, image, rating, index = 0 }: TestimonialCardProps) {
+export default function TestimonialCard({
+  quote,
+  author,
+  position,
+  image,
+  rating,
+  link,
+  index = 0,
+}: TestimonialCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -28,14 +37,32 @@ export default function TestimonialCard({ quote, author, position, image, rating
           <div className="flex justify-between items-start">
             <div className="flex items-center gap-4">
               <div className="relative h-16 w-16 rounded-full overflow-hidden border-2 border-primary/20 group-hover:border-primary/50 transition-colors">
-                <img src={image || "/placeholder.svg"} alt={author} className="h-full w-full object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <img
+                  src={image || "/placeholder.svg"}
+                  alt={author}
+                  className="h-full w-full object-cover"
+                />
+
+                {/* Hover Overlay with Link */}
+                {link && (
+                  <a
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="absolute inset-0 bg-black/40 text-white opacity-0 group-hover:opacity-100 flex items-center justify-center text-xs text-center px-2 transition-opacity duration-300"
+                  >
+                    Profile&nbsp;
+                    <ExternalLink className="w-3 h-3 inline" />
+                  </a>
+                )}
               </div>
+
               <div>
                 <h4 className="font-bold text-lg group-hover:text-primary transition-colors">{author}</h4>
                 <p className="text-muted-foreground">{position}</p>
               </div>
             </div>
+
             <div className="flex">
               {Array.from({ length: rating }).map((_, i) => (
                 <motion.div

@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { Calendar, ArrowRight } from "lucide-react"
 import { motion } from "framer-motion"
 import Link from "next/link"
+import Image from "next/image"
 
 interface BlogCardProps {
   title: string
@@ -29,12 +30,15 @@ export default function BlogCard({ title, excerpt, date, category, image, url, i
       <Link href={url} className="block h-full">
         <Card className="overflow-hidden border-2 border-primary/10 hover:border-primary/30 h-full bg-gradient-to-br from-background to-primary/5 shadow-lg hover:shadow-2xl transition-all duration-500">
           <div className="aspect-video overflow-hidden relative">
-            <motion.img
-              src={image || "/placeholder.svg"}
-              alt={title}
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              whileHover={{ scale: 1.1 }}
-            />
+            <motion.div whileHover={{ scale: 1.05 }} className="w-full h-full">
+              <Image
+                src={image || "/placeholder.svg"}
+                alt={title}
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </motion.div>
             <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
           <CardContent className="p-6 space-y-4">

@@ -39,6 +39,13 @@ import profileImage from "../public/stuti-profile.jpg";
 import vizifyimg from "../public/vizify.png";
 import alumconnectimg from "../public/alumconnect.png";
 import portfolioimg from "../public/portfolio.png";
+import Ai from "../public/AI.jpg";
+import Realtimechat from "../public/realtimechat.jpg";
+import fitness from "../public/fitnesstracker.jpg";
+import Abhishek from "../public/MSAbhishek.png";
+import leetcode1 from "../public/twosum.jpg";
+import leetcode2 from "../public/pilendrom.jpg";
+import leetcode3 from "../public/maximum.jpg";
 
 export default function Home() {
   return (
@@ -417,6 +424,7 @@ export default function Home() {
                 description:
                   "An AI-powered application that generates high-quality content for blogs and social media.",
                 tags: ["Python", "OpenAI", "React", "FastAPI"],
+                image: Ai,
                 codeUrl: "#",
                 demoUrl: "#",
               },
@@ -425,6 +433,7 @@ export default function Home() {
                 description:
                   "A real-time messaging platform with features like typing indicators, read receipts, and file sharing.",
                 tags: ["Socket.io", "Node.js", "Express", "MongoDB"],
+                image: Realtimechat,
                 codeUrl: "#",
                 demoUrl: "#",
               },
@@ -433,6 +442,7 @@ export default function Home() {
                 description:
                   "A comprehensive dashboard for tracking workouts, nutrition, and progress with data visualization.",
                 tags: ["React", "D3.js", "Node.js", "PostgreSQL"],
+                image: fitness,
                 codeUrl: "#",
                 demoUrl: "#",
               },
@@ -615,61 +625,60 @@ export default function Home() {
       </AnimatedSection>
 
       {/* Blog Section */}
-      <AnimatedSection id="blog" className="container py-24 md:py-32">
-        <div className="space-y-12">
-          <div className="space-y-4 text-center">
-            <div className="inline-block">
-              <h2 className="text-4xl md:text-5xl font-bold tracking-tight relative">
-                <span className="bg-gradient-to-r from-foreground via-primary to-purple-500 bg-clip-text text-transparent">
-                  Lines of Code, Stories of Growth :
-                </span>
-                <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-1/3 h-1 bg-gradient-to-r from-primary to-purple-500 rounded-full"></div>
-              </h2>
-            </div>
-            <p className="text-muted-foreground text-xl max-w-3xl mx-auto leading-relaxed">
-              A digital diary of logic, learning, and late-night 'aha!' moments.
-            </p>
-          </div>
+<AnimatedSection id="blog" className="container py-24 md:py-32">
+  <div className="space-y-12">
+    <div className="space-y-4 text-center">
+      <div className="inline-block">
+        <h2 className="text-4xl md:text-5xl font-bold tracking-tight relative">
+          <span className="bg-gradient-to-r from-foreground via-primary to-purple-500 bg-clip-text text-transparent">
+            Lines of Code, Stories of Growth :
+          </span>
+          <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-1/3 h-1 bg-gradient-to-r from-primary to-purple-500 rounded-full"></div>
+        </h2>
+      </div>
+      <p className="text-muted-foreground text-xl max-w-3xl mx-auto leading-relaxed">
+        A digital diary of logic, learning, and late-night 'aha!' moments.
+      </p>
+    </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: "LeetCode: Two Sum - HashMap Mastery",
-                excerpt:
-                  "Cracked the classic Two Sum problem using HashMap in O(n) time. A must-know for any dev prepping for interviews!",
-                date: "May 12, 2024",
-                category: "DSA Practice",
-                link: "https://www.linkedin.com/posts/stuticoder1_twosumproblemleetcode-activity-7270743282253451265-6JF1",
-              },
-              {
-                title: "LeetCode: Palindrome Number - Logic Over Strings",
-                excerpt:
-                  "Solved without converting to strings — reversed half the number using pure math logic. Efficient and elegant!",
-                date: "May 19, 2024",
-                category: "DSA Practice",
-                link: "https://www.linkedin.com/posts/stuticoder1_palindrome-number-activity-7281022717858893824-i_66",
-              },
-              {
-                title:
-                  "LeetCode: Maximum Candies to K Kids - Binary Search Brilliance",
-                excerpt:
-                  "Learned the Binary Search on Answer technique through this allocation problem. Leetcode Hard? More like Leetcode Smart!",
-                date: "June 6, 2024",
-                category: "DSA Practice",
-                link: "https://www.linkedin.com/posts/stuticoder1_day6-coding-problemsolving-activity-7306215870823829506-ypJF",
-              },
-            ].map((article, index) => (
-              <BlogCard
-                key={article.title}
-                title={article.title}
-                excerpt={article.excerpt}
-                date={article.date}
-                category={article.category}
-                image="/placeholder.svg?height=300&width=500"
-                url={article.link || "#"}
-                index={index}
-              />
-            ))}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {[
+        {
+          title: "LeetCode: Two Sum - HashMap Mastery",
+          excerpt: "Cracked the classic Two Sum problem using HashMap in O(n) time. A must-know for any dev prepping for interviews!",
+          date: "May 12, 2024",
+          category: "DSA Practice",
+          link: "https://www.linkedin.com/posts/stuticoder1_twosumproblemleetcode-activity-7270743282253451265-6JF1",
+          image: leetcode1
+        },
+        {
+          title: "LeetCode: Palindrome Number - Logic Over Strings",
+          excerpt: "Solved without converting to strings — reversed half the number using pure math logic. Efficient and elegant!",
+          date: "May 19, 2024",
+          category: "DSA Practice",
+          link: "https://www.linkedin.com/posts/stuticoder1_palindrome-number-activity-7281022717858893824-i_66",
+          image: leetcode2
+        },
+        {
+          title: "LeetCode: Maximum Candies to K Kids - Binary Search Brilliance",
+          excerpt: "Learned the Binary Search on Answer technique through this allocation problem. Leetcode Hard? More like Leetcode Smart!",
+          date: "June 6, 2024",
+          category: "DSA Practice",
+          link: "https://www.linkedin.com/posts/stuticoder1_day6-coding-problemsolving-activity-7306215870823829506-ypJF",
+          image: leetcode3
+        }
+      ].map((article, index) => (
+        <BlogCard
+          key={article.title}
+          title={article.title}
+          excerpt={article.excerpt}
+          date={article.date}
+          category={article.category}
+          image={article.image}
+          url={article.link || "#"}
+          index={index}
+        />
+      ))}
           </div>
 
           <div className="flex justify-center mt-12">
@@ -710,30 +719,38 @@ export default function Home() {
               {
                 quote:
                   "Stuti ji, your journey is truly inspiring! ✨ Your passion, authenticity, and commitment to meaningful connections have built a thriving community. It’s amazing to see the impact you’re making, and I’m excited for all that you’ll achieve in this new chapter. Keep shining and sharing your light!🌟",
-                author: "Piyush Soni",
-                position: "CEO, TechStart",
+                author: "Piyush Soni",
+                position: "Final Year - GIT, Jaipur",
+                image: "/images/piyush.jpg",
                 rating: 5,
+                link: "https://www.linkedin.com/in/piyush64bit",
               },
               {
                 quote:
                   "Hey Stuti, it was truly great connecting with you! Your posts are incredibly helpful — I’ve learned so much from them. Also, your WhatsApp channel is a gem for the valuable resources you share. God bless you and keep inspiring!",
                 author: "MS Abhishek",
                 position: "Marketing Director, GrowthLabs",
+                image: " " ,
                 rating: 5,
+                link: "https://www.linkedin.com/in/m-s-abhishek22",
               },
               {
                 quote:
                   "I just wanted to let you know that the PRs you made today really helped me learn a lot about open source. I wasn’t very familiar with it before, but your contribution sparked my curiosity to explore it further. I found it genuinely exciting — and I’m looking forward to learning more! Thanks for helping me discover something new today.",
-                author: "Prem Siddhartha",
+                author: "Prem Siddhartha",
                 position: "Product Manager, InnovateCorp",
+                image: "/images/prem.jpg",
                 rating: 5,
+                link: "https://www.linkedin.com/in/premsiddhartha",
               },
               {
                 quote:
-                  "I noticed your impressive work in digital outreach and truly appreciate the impact you're making. That’s why I’d love to stay connected — so I can learn more from your journey and experiences",
-                author: "Avinash Pandey",
+                  "I noticed your impressive work in digital outreach and truly appreciate the impact you're making. That’s why I’d love to stay connected — so I can learn more from your journey and experiences.",
+                author: "Avinash Pandey",
                 position: "Founder, CreativeDesign",
+                image: "/images/avinash.jpg",
                 rating: 5,
+                link: "https://www.linkedin.com/in/avinash-pandey-6162ab31a",
               },
             ].map((testimonial, index) => (
               <TestimonialCard
@@ -741,8 +758,9 @@ export default function Home() {
                 quote={testimonial.quote}
                 author={testimonial.author}
                 position={testimonial.position}
-                image="/placeholder.svg?height=100&width=100"
+                image={testimonial.image}
                 rating={testimonial.rating}
+                link={testimonial.link}
                 index={index}
               />
             ))}

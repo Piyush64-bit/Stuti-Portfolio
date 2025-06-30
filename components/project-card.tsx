@@ -15,6 +15,7 @@ interface ProjectCardProps {
   demoUrl: string;
   codeUrl: string;
   featured?: boolean;
+  status?: boolean;
   index?: number;
 }
 
@@ -27,6 +28,7 @@ export default function ProjectCard({
   codeUrl,
   featured = false,
   index = 0,
+  status = false,
 }: ProjectCardProps) {
   return (
     <motion.div
@@ -81,6 +83,31 @@ export default function ProjectCard({
                 <Badge className="bg-green-500 text-white shadow-md shadow-green-400/40 px-2.5 py-0.5 text-xs rounded-full flex items-center">
                   <Star className="h-2.5 w-2.5 mr-1 animate-ping-fast text-white" />
                   Live
+                </Badge>
+              </motion.div>
+            </motion.div>
+          )}
+          {status && (
+            <motion.div
+              className="absolute top-4 right-4"
+              initial={{ scale: 0, rotate: -30, opacity: 0 }}
+              animate={{ scale: 1, rotate: 0, opacity: 1 }}
+              transition={{
+                type: "spring",
+                stiffness: 300,
+                damping: 22,
+                delay: 0.3,
+              }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <motion.div
+                animate={{ scale: [1, 1.04, 1] }}
+                transition={{ repeat: Infinity, duration: 1.8 }}
+              >
+                <Badge className="bg-red-500 text-white shadow-md shadow-red-400/40 px-2.5 py-0.5 text-xs rounded-full flex items-center">
+                  <Star className="h-2.5 w-2.5 mr-1 animate-ping-fast text-white" />
+                  Under Process
                 </Badge>
               </motion.div>
             </motion.div>

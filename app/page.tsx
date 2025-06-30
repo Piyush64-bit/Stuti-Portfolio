@@ -46,6 +46,11 @@ import Abhishek from "../public/MSAbhishek.png";
 import leetcode1 from "../public/twosum.jpg";
 import leetcode2 from "../public/pilendrom.jpg";
 import leetcode3 from "../public/maximum.jpg";
+import Vizlearn from "../public/vizlearn.jpg";
+import ShieldHer from "../public/ShieldHer.jpg";
+import EventHub from "../public/EventHubPro.jpg";
+import NutriScan from "../public/NutriScan.jpg";
+import Webdev from "../public/WebDevNotes.jpg";
 
 export default function Home() {
   return (
@@ -420,6 +425,42 @@ export default function Home() {
                 demoUrl: "https://stuticoder123.netlify.app",
               },
               {
+                title: "Viz Learn",
+                description:
+                  "Interactive data visualization platform for learners — track your study hours, topics, and growth curves in style.",
+                tags: [
+                  "React",
+                  "D3.js",
+                  "Data Visualization",
+                  "Learning Analytics",
+                ],
+                image: Vizlearn,
+                featured: true,
+                codeUrl: "https://viz-learn.vercel.app/",
+                demoUrl: "https://viz-learn.vercel.app/",
+              },
+              {
+                title: "Shield Her",
+                description:
+                  "Empowering women’s safety with real-time alerts, location tracking, and emergency contact dashboard.",
+                tags: ["React", "Node.js", "GeoLocation", "Safety App"],
+                image: ShieldHer,
+                featured: true,
+                codeUrl: "https://shield-her.vercel.app/",
+                demoUrl: "https://shield-her.vercel.app/",
+              },
+              {
+                title: "EventHub Pro",
+                description:
+                  "All-in-one event management dashboard — schedule events, track attendees, and visualize engagement metrics.",
+                tags: ["React", "Node.js", "Charts.js", "Event Management"],
+                image: EventHub,
+                featured: true,
+                codeUrl: "https://v0-animated-event-tracker.vercel.app/",
+                demoUrl: "https://v0-animated-event-tracker.vercel.app/",
+              },
+
+              {
                 title: "AI Content Generator",
                 description:
                   "An AI-powered application that generates high-quality content for blogs and social media.",
@@ -427,6 +468,7 @@ export default function Home() {
                 image: Ai,
                 codeUrl: "#",
                 demoUrl: "#",
+                status: true, // 🛠️ under working
               },
               {
                 title: "Real-time Chat Application",
@@ -436,6 +478,7 @@ export default function Home() {
                 image: Realtimechat,
                 codeUrl: "#",
                 demoUrl: "#",
+                status: true,
               },
               {
                 title: "Fitness Tracking Dashboard",
@@ -445,6 +488,39 @@ export default function Home() {
                 image: fitness,
                 codeUrl: "#",
                 demoUrl: "#",
+                status: true,
+              },
+              {
+                title: "NutriScan",
+                description:
+                  "Smart nutrition scanner & tracker — scan meals, log macros, and visualize your daily health trends.",
+                tags: [
+                  "React",
+                  "Nutrition API",
+                  "Data Visualization",
+                  "Health Tech",
+                ],
+                image: NutriScan,
+                codeUrl: "#",
+                demoUrl: "#",
+                status: true,
+              },
+              {
+                title: "Web Dev Personalized Notes",
+                description:
+                  "Curated, beginner-friendly web development notes — from HTML basics to React tricks, all in one repo.",
+                tags: [
+                  "Markdown",
+                  "Frontend",
+                  "Cheat Sheets",
+                  "Learning Resource",
+                ],
+                image: Webdev,
+                codeUrl:
+                  "https://github.com/stuticoder123/Web-Development-Notes",
+                demoUrl:
+                  "https://github.com/stuticoder123/Web-Development-Notes/edit/main/README.md",
+                status: true,
               },
             ].map((project, index) => (
               <ProjectCard
@@ -460,6 +536,7 @@ export default function Home() {
                 demoUrl={project.demoUrl}
                 codeUrl={project.codeUrl}
                 featured={project.featured}
+                status={project.status}
                 index={index}
               />
             ))}
@@ -472,7 +549,7 @@ export default function Home() {
                 className="border-2 border-primary/50 text-primary hover:bg-gradient-to-r hover:from-primary/10 hover:to-purple-500/10 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 text-lg px-8 py-4 rounded-xl"
                 asChild
               >
-                <Link href="#">
+                <Link href="#all-projects">
                   View All Projects <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
@@ -625,60 +702,64 @@ export default function Home() {
       </AnimatedSection>
 
       {/* Blog Section */}
-<AnimatedSection id="blog" className="container py-24 md:py-32">
-  <div className="space-y-12">
-    <div className="space-y-4 text-center">
-      <div className="inline-block">
-        <h2 className="text-4xl md:text-5xl font-bold tracking-tight relative">
-          <span className="bg-gradient-to-r from-foreground via-primary to-purple-500 bg-clip-text text-transparent">
-            Lines of Code, Stories of Growth :
-          </span>
-          <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-1/3 h-1 bg-gradient-to-r from-primary to-purple-500 rounded-full"></div>
-        </h2>
-      </div>
-      <p className="text-muted-foreground text-xl max-w-3xl mx-auto leading-relaxed">
-        A digital diary of logic, learning, and late-night 'aha!' moments.
-      </p>
-    </div>
+      <AnimatedSection id="blog" className="container py-24 md:py-32">
+        <div className="space-y-12">
+          <div className="space-y-4 text-center">
+            <div className="inline-block">
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight relative">
+                <span className="bg-gradient-to-r from-foreground via-primary to-purple-500 bg-clip-text text-transparent">
+                  Lines of Code, Stories of Growth :
+                </span>
+                <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-1/3 h-1 bg-gradient-to-r from-primary to-purple-500 rounded-full"></div>
+              </h2>
+            </div>
+            <p className="text-muted-foreground text-xl max-w-3xl mx-auto leading-relaxed">
+              A digital diary of logic, learning, and late-night 'aha!' moments.
+            </p>
+          </div>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {[
-        {
-          title: "LeetCode: Two Sum - HashMap Mastery",
-          excerpt: "Cracked the classic Two Sum problem using HashMap in O(n) time. A must-know for any dev prepping for interviews!",
-          date: "May 12, 2024",
-          category: "DSA Practice",
-          link: "https://www.linkedin.com/posts/stuticoder1_twosumproblemleetcode-activity-7270743282253451265-6JF1",
-          image: leetcode1
-        },
-        {
-          title: "LeetCode: Palindrome Number - Logic Over Strings",
-          excerpt: "Solved without converting to strings — reversed half the number using pure math logic. Efficient and elegant!",
-          date: "May 19, 2024",
-          category: "DSA Practice",
-          link: "https://www.linkedin.com/posts/stuticoder1_palindrome-number-activity-7281022717858893824-i_66",
-          image: leetcode2
-        },
-        {
-          title: "LeetCode: Maximum Candies to K Kids - Binary Search Brilliance",
-          excerpt: "Learned the Binary Search on Answer technique through this allocation problem. Leetcode Hard? More like Leetcode Smart!",
-          date: "June 6, 2024",
-          category: "DSA Practice",
-          link: "https://www.linkedin.com/posts/stuticoder1_day6-coding-problemsolving-activity-7306215870823829506-ypJF",
-          image: leetcode3
-        }
-      ].map((article, index) => (
-        <BlogCard
-          key={article.title}
-          title={article.title}
-          excerpt={article.excerpt}
-          date={article.date}
-          category={article.category}
-          image={article.image}
-          url={article.link || "#"}
-          index={index}
-        />
-      ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                title: "LeetCode: Two Sum - HashMap Mastery",
+                excerpt:
+                  "Cracked the classic Two Sum problem using HashMap in O(n) time. A must-know for any dev prepping for interviews!",
+                date: "May 12, 2024",
+                category: "DSA Practice",
+                link: "https://www.linkedin.com/posts/stuticoder1_twosumproblemleetcode-activity-7270743282253451265-6JF1",
+                image: leetcode1,
+              },
+              {
+                title: "LeetCode: Palindrome Number - Logic Over Strings",
+                excerpt:
+                  "Solved without converting to strings — reversed half the number using pure math logic. Efficient and elegant!",
+                date: "May 19, 2024",
+                category: "DSA Practice",
+                link: "https://www.linkedin.com/posts/stuticoder1_palindrome-number-activity-7281022717858893824-i_66",
+                image: leetcode2,
+              },
+              {
+                title:
+                  "LeetCode: Maximum Candies to K Kids - Binary Search Brilliance",
+                excerpt:
+                  "Learned the Binary Search on Answer technique through this allocation problem. Leetcode Hard? More like Leetcode Smart!",
+                date: "June 6, 2024",
+                category: "DSA Practice",
+                link: "https://www.linkedin.com/posts/stuticoder1_day6-coding-problemsolving-activity-7306215870823829506-ypJF",
+                image: leetcode3,
+              },
+            ].map((article, index) => (
+              <BlogCard
+                key={article.title}
+                title={article.title}
+                excerpt={article.excerpt}
+                date={article.date}
+                category={article.category}
+                image={article.image}
+                url={article.link || "#"}
+                index={index}
+              />
+            ))}
           </div>
 
           <div className="flex justify-center mt-12">
@@ -730,7 +811,7 @@ export default function Home() {
                   "Hey Stuti, it was truly great connecting with you! Your posts are incredibly helpful — I’ve learned so much from them. Also, your WhatsApp channel is a gem for the valuable resources you share. God bless you and keep inspiring!",
                 author: "MS Abhishek",
                 position: "Marketing Director, GrowthLabs",
-                image: " " ,
+                image: " ",
                 rating: 5,
                 link: "https://www.linkedin.com/in/m-s-abhishek22",
               },

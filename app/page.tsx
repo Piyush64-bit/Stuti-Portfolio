@@ -662,35 +662,35 @@ export default function Home() {
             <div className="space-y-16">
               {[
                 {
-                  year: "2022 - Present",
-                  title: "Senior Frontend Developer",
-                  company: "Tech Innovations Inc.",
+                  year: "Feb,2025 - Present",
+                  title: "Founder & CEO",
+                  company: "Alum Connect",
                   description:
-                    "Lead the frontend development team in building responsive and accessible web applications. Implemented modern frontend architecture using React and Next.js. Improved performance metrics by 40%.",
+                    "Engineered a high-performance alumni engagement platform – Alum Connect – that bridges mentorship, jobs, and real-time interaction through a sleek and responsive UI.",
                   side: "right" as const,
                 },
                 {
-                  year: "2020 - 2022",
-                  title: "Full Stack Developer",
-                  company: "Digital Solutions Ltd.",
+                  year: "Nov,2024 - May,2025",
+                  title: "Digital Outreach Strategist",
+                  company: "Secure Her",
                   description:
-                    "Developed full-stack applications using the MERN stack. Implemented RESTful APIs and integrated third-party services. Collaborated with UX/UI designers to implement responsive designs.",
+                    "Analyzed audience insights, optimized posting schedules, and introduced storytelling formats that made safety education more relatable and actionable.",
                   side: "left" as const,
                 },
                 {
-                  year: "2018 - 2020",
-                  title: "Web Developer",
-                  company: "Creative Web Agency",
+                  year: "Sep,2023 - Dec,2024",
+                  title: "DSA and Career Guidance Mentor",
+                  company: "Unstop",
                   description:
-                    "Built responsive websites for clients across various industries. Worked with WordPress, HTML, CSS, and JavaScript. Collaborated with designers to implement pixel-perfect designs.",
+                    "I’ve dedicated myself to providing completely free mentorship to students from diverse backgrounds — especially those who feel lost or intimidated by coding and career decisions.",
                   side: "right" as const,
                 },
                 {
-                  year: "2017 - 2018",
-                  title: "Junior Developer",
-                  company: "StartUp Ventures",
+                  year: "July,2024 - Oct,2024",
+                  title: "Student Program Coordinator",
+                  company: "AlgoUniversity",
                   description:
-                    "Assisted in developing web applications using React. Participated in code reviews and implemented feedback. Learned about agile development methodologies.",
+                    "As a Trainee Student Program Coordinator at AlgoUniversity – supported student engagement and coding events, gaining hands-on experience in tech education management.",
                   side: "left" as const,
                 },
               ].map((item, index) => (
@@ -724,7 +724,7 @@ export default function Home() {
                 title: "LeetCode: Two Sum - HashMap Mastery",
                 excerpt:
                   "Cracked the classic Two Sum problem using HashMap in O(n) time. A must-know for any dev prepping for interviews!",
-                date: "May 12, 2024",
+                date: "April,2024",
                 category: "DSA Practice",
                 link: "https://www.linkedin.com/posts/stuticoder1_twosumproblemleetcode-activity-7270743282253451265-6JF1",
                 image: leetcode1,
@@ -733,7 +733,7 @@ export default function Home() {
                 title: "LeetCode: Palindrome Number - Logic Over Strings",
                 excerpt:
                   "Solved without converting to strings — reversed half the number using pure math logic. Efficient and elegant!",
-                date: "May 19, 2024",
+                date: "May,2024",
                 category: "DSA Practice",
                 link: "https://www.linkedin.com/posts/stuticoder1_palindrome-number-activity-7281022717858893824-i_66",
                 image: leetcode2,
@@ -743,7 +743,7 @@ export default function Home() {
                   "LeetCode: Maximum Candies to K Kids - Binary Search Brilliance",
                 excerpt:
                   "Learned the Binary Search on Answer technique through this allocation problem. Leetcode Hard? More like Leetcode Smart!",
-                date: "June 6, 2024",
+                date: "June,2024",
                 category: "DSA Practice",
                 link: "https://www.linkedin.com/posts/stuticoder1_day6-coding-problemsolving-activity-7306215870823829506-ypJF",
                 image: leetcode3,
@@ -810,7 +810,7 @@ export default function Home() {
                 quote:
                   "Hey Stuti, it was truly great connecting with you! Your posts are incredibly helpful — I’ve learned so much from them. Also, your WhatsApp channel is a gem for the valuable resources you share. God bless you and keep inspiring!",
                 author: "MS Abhishek",
-                position: "Marketing Director, GrowthLabs",
+                position: "Campus Mantri, GeeksforGeeks",
                 image: " ",
                 rating: 5,
                 link: "https://www.linkedin.com/in/m-s-abhishek22",
@@ -819,7 +819,7 @@ export default function Home() {
                 quote:
                   "I just wanted to let you know that the PRs you made today really helped me learn a lot about open source. I wasn’t very familiar with it before, but your contribution sparked my curiosity to explore it further. I found it genuinely exciting — and I’m looking forward to learning more! Thanks for helping me discover something new today.",
                 author: "Prem Siddhartha",
-                position: "Product Manager, InnovateCorp",
+                position: "3rd Year - IIT Madras",
                 image: "/images/prem.jpg",
                 rating: 5,
                 link: "https://www.linkedin.com/in/premsiddhartha",
@@ -828,7 +828,7 @@ export default function Home() {
                 quote:
                   "I noticed your impressive work in digital outreach and truly appreciate the impact you're making. That’s why I’d love to stay connected — so I can learn more from your journey and experiences.",
                 author: "Avinash Pandey",
-                position: "Founder, CreativeDesign",
+                position: "Final Year - RTU,Kota",
                 image: "/images/avinash.jpg",
                 rating: 5,
                 link: "https://www.linkedin.com/in/avinash-pandey-6162ab31a",

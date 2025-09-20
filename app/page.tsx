@@ -811,7 +811,7 @@ export default function Home() {
                   "Hey Stuti, it was truly great connecting with you! Your posts are incredibly helpful — I’ve learned so much from them. Also, your WhatsApp channel is a gem for the valuable resources you share. God bless you and keep inspiring!",
                 author: "MS Abhishek",
                 position: "Campus Mantri, GeeksforGeeks",
-                image: " ",
+                image: "/images/MSAbhishek.png",
                 rating: 5,
                 link: "https://www.linkedin.com/in/m-s-abhishek22",
               },

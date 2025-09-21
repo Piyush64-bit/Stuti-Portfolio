@@ -1,8 +1,26 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { useMemo } from 'react';
 
 export default function CosmicBackground() {
+  // Generate stars only once on the client side
+  const stars = useMemo(() => {
+    if (typeof window === 'undefined') return [];
+    
+    return Array.from({ length: 50 }, () => ({
+      width: Math.random() * 4,
+      height: Math.random() * 4,
+      left: Math.random() * 100,
+      top: Math.random() * 100,
+    }));
+  }, []);
+
+  // Don't render on server
+  if (typeof window === 'undefined') {
+    return null;
+  }
+
   return (
     <div className="absolute inset-0 overflow-hidden rounded-full">
       {/* Enhanced cosmic nebula effect with more vibrant colors */}
@@ -50,15 +68,15 @@ export default function CosmicBackground() {
       />
 
       {/* Enhanced twinkling stars with more variety */}
-      {Array.from({ length: 25 }).map((_, i) => (
+      {stars.map((star, i) => (
         <motion.div
           key={i}
           className="absolute bg-white rounded-full"
           style={{
-            width: Math.random() * 3 + 1,
-            height: Math.random() * 3 + 1,
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`,
+            width: star.width,
+            height: star.height,
+            left: `${star.left}%`,
+            top: `${star.top}%`,
             filter: "drop-shadow(0 0 4px rgba(255, 255, 255, 0.8))",
           }}
           animate={{

@@ -1,3 +1,5 @@
+"use client"
+
 import {
   ArrowRight,
   Github,
@@ -30,7 +32,7 @@ import FloatingElements from "@/components/floating-elements";
 import GradientBlob from "@/components/gradient-blob";
 import MagneticButton from "@/components/magnetic-button";
 import ScrollProgress from "@/components/scroll-progress";
-import CosmicBackground from "@/components/cosmic-background";
+import dynamic from 'next/dynamic';
 import EnhancedCosmicAura from "@/components/enhanced-cosmic-aura";
 import EnhancedCursor from "@/components/enhanced-cursor";
 import ScrollIndicator from "@/components/scroll-indicator";
@@ -51,6 +53,15 @@ import ShieldHer from "../public/ShieldHer.jpg";
 import EventHub from "../public/EventHubPro.jpg";
 import NutriScan from "../public/NutriScan.jpg";
 import Webdev from "../public/WebDevNotes.jpg";
+
+// Import with SSR disabled
+const CosmicBackground = dynamic(
+  () => import('@/components/cosmic-background'),
+  { 
+    ssr: false,
+    loading: () => <div className="absolute inset-0 overflow-hidden rounded-full" />
+  }
+);
 
 export default function Home() {
   return (
@@ -276,7 +287,7 @@ export default function Home() {
                   </span>
                   <div className="absolute -bottom-2 left-0 w-1/3 h-1 bg-gradient-to-r from-primary to-purple-500 rounded-full"></div>
                 </h2>
-              </div>
+            </div>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Hey, I’m a full-stack developer and tech enthusiast passionate
                 about building impactful, user-first web applications.From
@@ -893,7 +904,7 @@ export default function Home() {
                     className="flex items-center gap-4 p-4 rounded-xl bg-gradient-to-r from-primary/5 to-purple-500/5 border border-primary/10 hover:border-primary/30 transition-all duration-300 group hover:scale-105"
                     target="_blank"
                     rel="noopener noreferrer"
-                  >
+                >
                     <div className="p-3 rounded-full bg-gradient-to-r from-primary/10 to-purple-500/10 group-hover:from-primary/20 group-hover:to-purple-500/20 transition-all duration-300">
                       <Icon className="h-6 w-6 text-primary" />
                     </div>
